@@ -1,3 +1,14 @@
+"For airline
+let g:airline#extensions#tabline#enabled = 1
+"For theme:
+syntax enable
+"colorscheme darkblue
+"-set background=dark
+"-colorscheme solarized
+colorscheme molokai
+let g:molokai_original = 1
+"let g:rehash256 = 1
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -33,14 +44,15 @@ Plugin 'gmarik/vundle'
 " We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'bling/vim-airline.git'
+Plugin 'tpope/vim-fugitive.git'
+" color schemes:
+Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'tomasr/molokai.git'
 
 " To get plugins from Vim Scripts, you can reference the plugin
 " by name as it appears on the site
-Plugin 'php.vim'
+" Plugin 'php.vim'
 " Plugin 'javascript.vim'
-Plugin 'jquery.vim'
-Plugin 'html.vim'
-Plugin 'css.vim'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
