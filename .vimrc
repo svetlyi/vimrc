@@ -1,6 +1,11 @@
+"Folding
+set foldenable
+set foldmethod=indent
+set foldlevel=99
 "For airline
 let g:airline#extensions#tabline#enabled = 1
 "For theme:
+set t_Co=256
 syntax enable
 "colorscheme darkblue
 "-set background=dark
@@ -44,14 +49,23 @@ Plugin 'gmarik/vundle'
 " We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'bling/vim-airline.git'
-Plugin 'tpope/vim-fugitive.git'
+Plugin 'tpope/vim-fugitive.git' "for git
+
+"neocomplcache:
+Plugin 'Shougo/neocomplcache.vim.git' "autocomplete
+let g:neocomplcache_enable_at_startup = 1 "for autocomplete
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+
 " color schemes:
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'tomasr/molokai.git'
 
 " To get plugins from Vim Scripts, you can reference the plugin
 " by name as it appears on the site
-" Plugin 'php.vim'
+" Syntax
+Plugin 'StanAngeloff/php.vim'
+Plugin 'pangloss/vim-javascript'
+
 " Plugin 'javascript.vim'
 
 " Now we can turn our filetype functionality back on
