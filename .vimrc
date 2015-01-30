@@ -1,3 +1,9 @@
+"Installing:
+"git clone https://github.com/svetlyi/vimrc.git
+"git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+":PluginInstall
+"mv ./vim/bundle/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
+"
 "Folding
 set foldenable
 set foldmethod=indent
@@ -40,7 +46,7 @@ set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 " For GitHub repos, you specify plugins using the
 " 'user/repository' format
 " -Install-
-" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+" Vundle
 " :PluginInstall -Installing plugins
 " :PluginList - lists configured plugins
 " :PluginUpdate or :PluginInstall! - to update
