@@ -2,6 +2,7 @@
 "git clone https://github.com/svetlyi/vimrc.git
 "git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 ":PluginInstall
+"mkdir ~/.vim/colors
 "mv ./vim/bundle/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
 "
 "Folding
@@ -20,6 +21,7 @@ colorscheme molokai
 let g:molokai_original = 1
 "let g:rehash256 = 1
 
+set number
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -71,6 +73,7 @@ Plugin 'tomasr/molokai.git'
 " Syntax
 Plugin 'StanAngeloff/php.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'godlygeek/tabular'
 
 " Plugin 'javascript.vim'
 
