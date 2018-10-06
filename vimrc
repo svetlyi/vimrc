@@ -65,6 +65,8 @@ Plugin 'tomasr/molokai.git'
 " by name as it appears on the site
 " Syntax
 Plugin 'godlygeek/tabular'
+" Drawing different ASCII pictures
+Plugin 'DrawIt'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
