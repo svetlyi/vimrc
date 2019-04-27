@@ -70,3 +70,4 @@ Plugin 'DrawIt'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
+let NERDTreeShowHidden=1
