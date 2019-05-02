@@ -9,6 +9,16 @@ then
   cp .bash_profile ~/.bash_profile
   . ~/.bash_profile
   sudo chmod 740 ~/.bash_profile
+  # if "~/.bash_profile" does not exist in ~/.bashrc, we will add it:
+  if grep -Fxq "if [ -f ~/.bash_profile ]; then" ~/.bashrc
+  then
+    echo "bash_profile invoking already exists"
+  else
+    echo "\n" >> ~/.bashrc
+    echo "if [ -f ~/.bash_profile ]; then" >> ~/.bashrc
+    echo "  . ~/.bash_profile" >> ~/.bashrc
+    echo "fi" >> ~/.bashrc
+  fi
 else
   echo "skipping"
 fi
@@ -21,6 +31,17 @@ then
   cp .bash_aliases ~/.bash_aliases
   . ~/.bash_aliases
   sudo chmod 740 ~/.bash_aliases
+  # if "~/.bash_aliases" does not exist in ~/.bashrc, we will add it:
+  if grep -Fxq "if [ -f ~/.bash_aliases ]; then" ~/.bashrc
+  then
+    echo "bash_aliases invoking already exists"
+  else
+    echo "\n" >> ~/.bashrc
+    echo "if [ -f ~/.bash_aliases ]; then" >> ~/.bashrc
+    echo "  . ~/.bash_aliases" >> ~/.bashrc
+    echo "fi" >> ~/.bashrc
+  fi
+
 else
   echo "skipping"
 fi
