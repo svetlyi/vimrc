@@ -7,6 +7,7 @@ read -r -p "Installing .bash_profile [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
   cp .bash_profile ~/.bash_profile
+  echo ".bash_profile has been copied"
   . ~/.bash_profile
   sudo chmod 740 ~/.bash_profile
   # if "~/.bash_profile" does not exist in ~/.bashrc, we will add it:
@@ -29,6 +30,7 @@ read -r -p "Installing .bash_aliases [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
   cp .bash_aliases ~/.bash_aliases
+  echo ".bash_aliases has been copied"
   . ~/.bash_aliases
   sudo chmod 740 ~/.bash_aliases
   # if "~/.bash_aliases" does not exist in ~/.bashrc, we will add it:
